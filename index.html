@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Ivan Vizcaino Garcia - portfolio</title>
         <meta charset="UTF-8">
+        <title>Ivan Vizcaino Garcia - portfolio</title>
+        <meta name="description" content="A portfolio website to show all my projects and skills.">
         <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <meta name="theme-color" content="#000000">
         <link rel="stylesheet" href="/src/css/reset.css">
         <link rel="stylesheet" href="/src/css/index.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
         <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&amp;family=NTR&amp;display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
         <header>
             <div class="hamburger">
             </div>
@@ -93,8 +95,69 @@
                     </p>
                 </div>
             </section>
-            <section id="experience"></section>
-            <section id="proyects"></section>
+            <section id="experience">
+                <div class="experience-heading">
+                    Experience <hr>
+                </div>
+                <div class="experience-content">
+                    <div class="experience-tab">
+                        <div class="tab">
+                            <button class="tablinks" onclick="openCity(event, 'firstOne')">firstOne</button>
+                        </div>
+                        <div class="tab-content">
+                            <p id="FirtsOne" class="job">
+                                <span class="joblist-job-title">Software Engineer @ </span>
+                                <span class="joblist-job-company">FistOne</span>
+                                <div class="joblist-duration">APR 2023 - ...</div>
+                                <ul class="job-description">
+                                    <div><li>1 characters description.</li></div>
+                                    <div><li>2 characters description.</li></div>
+                                    <div><li>3 characters description.</li></div>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="proyects">
+                <div class="proyects-heading">
+                    Some things I've built <hr>
+                </div>
+                <div class="proyects-content">
+                    <ul class="projects-grid">
+                        <li class="projects-card">
+                            <div class="card-header">
+                                <div class="folder-icon"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" style="font-size: 35px;"><path d="M20 6h-8l-1.41-1.41C10.21 4.21 9.7 4 9.17 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-1 12H5c-.55 0-1-.45-1-1V9c0-.55.45-1 1-1h14c.55 0 1 .45 1 1v8c0 .55-.45 1-1 1z"></path></svg></div>
+                                <span class="external-links"><a class="github-icon" href="https://github.com/JamesMokua/fightfu" target="_blank" rel="noreferrer"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" style="font-size: 20px; color: rgb(204, 214, 246);"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></a><a class="open-icon" href="https://fightfu.netlify.app/" target="_blank" rel="noreferrer"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" style="font-size: 25px; color: rgb(204, 214, 246);"><path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"></path></svg></a></span>
+                            </div>
+                            <div class="card-title">Encryper</div>
+                            <div class="card-desc">
+                                A simple encryption program developed with JavaScript. 
+                                It takes a default list of characters and converts them to another set based on a specific algorithm. 
+                                This project showcases my skills in algorithmic thinking and data manipulation.</div>
+                            <div class="card-tech">HTML, CSS, JAVASCRIPT</div>
+                        </li>
+                        <li class="projects-card">
+                            <div class="card-header">
+                                <div class="folder-icon"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" style="font-size: 35px;"><path d="M20 6h-8l-1.41-1.41C10.21 4.21 9.7 4 9.17 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-1 12H5c-.55 0-1-.45-1-1V9c0-.55.45-1 1-1h14c.55 0 1 .45 1 1v8c0 .55-.45 1-1 1z"></path></svg></div>
+                                <span class="external-links"><a class="github-icon" href="https://github.com/JamesMokua/curved-carousel" target="_blank" rel="noreferrer"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" style="font-size: 20px; color: rgb(204, 214, 246);"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8 0 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1 .9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"></path></svg></a><a class="open-icon" href="https://curvedcarousel.netlify.app/" target="_blank" rel="noreferrer"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true" style="font-size: 25px; color: rgb(204, 214, 246);"><path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"></path></svg></a></span>
+                            </div>
+                            <div class="card-title">Universal Converter</div>
+                            <div class="card-desc">
+                                A desktop application developed using Java Swing, showcasing my knowledge and skills in abstraction, encapsulation, inheritance, and polymorphism in object-oriented programming. 
+                                The Universal Converter allows users to convert various units of measurement, providing a user-friendly and intuitive interface. 
+                                Experience the power of abstraction and modularity with this project.
+                            </Object></div>
+                            <div class="card-tech">JAVA</div>
+                        </li>
+                    </ul>
+            </section>
         </main>
+        <footer>
+            <div class="ending-credits aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="50">
+                <div>Builted by Ivan Vizcaino. </div>
+                <div>All rights reserved. ©2023</div>
+            </div>
+        </footer>
     </body>
 </html>

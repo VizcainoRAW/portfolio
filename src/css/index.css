@@ -16,14 +16,19 @@ body {
 }
 
 header{
-    width: 100%;
+    width: 100vw;
     height: 0;
 }
 
 section{
-    width: 100%;
     height: 100vh;
+}
+
+hr {
     border: none;
+    border-bottom: 0.15rem solid #233554;
+    margin-left: 2rem;
+    width: 25%;
 }
 
 ::-webkit-scrollbar-track {
@@ -50,15 +55,15 @@ section{
     padding-left: 8rem;
     padding-right: 5rem;
     position: fixed;
-    background-color: #0a192f;
+    background-color: var(--color-background);
     width: 100%;
-    height: 20vh;
+    height: 10vh;
     z-index: 1;
 }
   
 .nav-wrapper.scrolled {
-    background-color: #0A192F;
-    height: 10vh;
+    background-color: var(--color-background);
+    height: 5vh;
     margin-top: 0;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
@@ -90,6 +95,7 @@ section{
 
 .description{
     width: 80%;
+    margin: 5em;
 }
   
 .Typist{
@@ -111,21 +117,66 @@ section{
     display: inline-block;
     animation: blink 1s linear infinite;
     opacity: 1;
-    color: #64ffda;
+    color: var(--color-StrongFont);
     padding-left: 4px;
     
 }
 
 .summary {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 2.5rem;
 }
 
 
 .light{
-    color: #64ffda;
+    color: var(--color-StrongFont);
 }
+
+.heading {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--color-lightFont);
+    font-size: 3rem;
+    font-weight: 600;
+    padding-left: 7%;
+    
+}
+
+.about-content{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5;
+    
+}
+
+.about-text {
+    width: 40%;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.about-description{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.about-description li:before {
+    color: var(--color-StrongFont);
+    content: "▹ ";
+}
+
+.about-image{
+    width: 40%;
+}
+
+
 
 @keyframes blink {
     0% { opacity: 1; }

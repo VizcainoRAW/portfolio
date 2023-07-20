@@ -312,6 +312,12 @@ hr {
     font-size: 1rem;
 }
 
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @keyframes blink {
     0% { opacity: 1; }
     50% { opacity: 0; }

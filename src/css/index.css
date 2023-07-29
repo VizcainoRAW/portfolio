@@ -9,6 +9,12 @@ html {
     scroll-behavior: smooth
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background: var(--color-background);
     font-family: NTR,sans-serif;
@@ -50,7 +56,6 @@ hr {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: -4.5rem;
     margin-top: 2rem;
     padding-left: 8rem;
     padding-right: 5rem;
@@ -146,7 +151,7 @@ hr {
 }
 
 .about-content{
-    width: 100%;
+    width: 90%;
     height: 90%;
     display: flex;
     align-items: center;
@@ -157,8 +162,14 @@ hr {
 
 .about-text {
     width: 45%;
+    height: 100%;
     font-size: 1.5rem;
     font-weight: 400;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-description{
@@ -184,6 +195,7 @@ hr {
 }
 
 .experience-content{
+    width: 90%;
     height: 90%;
     display: flex;
     justify-content: center;
@@ -265,11 +277,12 @@ hr {
 }
 
 .projects-content{
-    width: 100%;
+    width: 90%;
     height: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: auto;
 }
 
 .projects-grid{
@@ -312,6 +325,10 @@ hr {
     color: var(--color-lightFont);
     font-size: 2rem;
     font-weight: 700;
+}
+
+.card-des{
+    overflow: auto;
 }
 
 .card-tech {

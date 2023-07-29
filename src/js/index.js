@@ -9,6 +9,12 @@ window.addEventListener('scroll', function() {
     }
   });
 
+  function toggleMenu() {
+    console.log("touched")
+    var navWrapper = document.querySelector('.nav-wrapper');
+    navWrapper.classList.toggle('active');
+  }
+
   document.addEventListener('DOMContentLoaded', function() {
     openJob(event, 'firtsJob');
   });

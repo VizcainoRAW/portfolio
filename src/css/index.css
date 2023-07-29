@@ -52,7 +52,7 @@ hr {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3)
 }
 
-button {
+.btn {
     background: var(--color-background);
     border: 0.1rem solid var(--color-StrongFont);
     border-radius: 0.5rem;
@@ -239,18 +239,21 @@ button:hover {
 
 .tab{
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     width: 25%;
 }
 
 .tablinks{
     width: 100%;
-    height: 10%;
+}
+
+.tablink{
+    width: 100%;
+    height: 3rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding-left: 1rem;
     font-size: 1.5rem;
     background: none;
     border: none;
@@ -270,27 +273,33 @@ button:hover {
     background-color: var(--color-StrongFont);
 }
 
+.tab-content{
+    width: 70%;
+    font-size: 2rem;
+}
+
 .job{
     display: none;
+    width: 100%;
+    height: 100%; 
 }
 
 .joblist-job-title{
-    margin-left: 2rem;
-    font-size: 2rem;
+    margin-left: 1.5em;
+    font-size: 1.5em;
     color: var(--color-lightFont);
     font-family: NTR, sans-serif;
 }
 
 .joblist-job-company{
     font-family: NTR, sans-serif;
-    font-size: 2rem;
+    font-size: 1.5em;
     color: var(--color-StrongFont);
 }
 
 
 .joblist-duration{
     margin-left: 2rem;
-    font-size: 1.5rem;
 }
 
 .job-description {
@@ -298,6 +307,7 @@ button:hover {
     font-size: 20px;
     max-width: 650px;
     padding-top: 24px;
+    overflow-y: auto;
 }
 
 .job-description li:before {
@@ -464,6 +474,32 @@ footer{
         width: 90%;
         padding-left: 1rem;
     }
+
+    .experience-tab{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .tab{
+        width: 100%;
+    }
+
+    .tablink{
+        font-size: 1rem;
+    }
+
+    .tab-content{
+        width: 100%;
+        padding-top: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .joblist-job-title{
+        margin: 0;
+    }
+
+
 
 }
 

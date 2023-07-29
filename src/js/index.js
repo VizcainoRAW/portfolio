@@ -28,7 +28,7 @@ window.addEventListener('scroll', function() {
       tabcontent[i].style.display = "none";
     }
   
-    tablinks = document.getElementsByClassName("tablinks");
+    tablinks = document.getElementsByClassName("tablink");
     for (i = 0; i < tablinks.length; i++) {
       tablinks[i].className = tablinks[i].className.replace(" active", "");
     }

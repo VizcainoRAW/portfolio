@@ -52,6 +52,22 @@ hr {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3)
 }
 
+button {
+    background: var(--color-background);
+    border: 0.1rem solid var(--color-StrongFont);
+    border-radius: 0.5rem;
+    color: var(--color-StrongFont);
+    cursor: pointer;
+    font-weight: 300;
+    padding: 1rem 1.5rem;
+}
+
+button:hover {
+    background: var(--color-StrongFont);
+    border: .1rem solid var(--color-background);
+    color: var(--color-background)
+}
+
 .nav-wrapper {
     display: flex;
     align-items: center;
@@ -72,11 +88,16 @@ hr {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
+.nav-wrapper a{
+    cursor: pointer;
+}
+
 .navitems{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     width: 70%;
+    color: var(--color-StrongFont);
 }
 
 .hamburger{
@@ -100,7 +121,7 @@ hr {
     justify-content: flex-end;
 }
 .title{
-    font-size: 2em;
+    font-size: 2rem;
     width: 80%;
 }
 
@@ -111,16 +132,14 @@ hr {
   
 .Typist{
     color: var(--color-lightFont);
-    font-size: 7rem;
+    font-size: 3em;
     font-weight: 400;
-    margin-left: -0.45rem;
 }
 
 
 .Cursor--blinking {
     -webkit-font-smoothing: antialiased;
     line-height: 6rem;
-    font-size: 7rem;
     font-weight: 400;
     box-sizing: border-box;
     margin: 0;
@@ -192,6 +211,10 @@ hr {
 .about-image{
     width: 360px;
     height: 480px;
+    border-radius: 0px;
+    box-shadow:  21px 21px 6px #050b15;
+          
+
 }
 
 .about-image img{
@@ -354,9 +377,9 @@ footer{
 
     .hamburger{
         display: inline-block;
-        position: absolute;
-        left: 85vw;
-        top: 0;
+        position: fixed;
+        right: 2vw;
+        top: 2vw;
         z-index: 2;
     }
 
@@ -371,18 +394,52 @@ footer{
         padding: 0;
         margin: 0;
         transition: 300ms;
+        box-shadow: 5px 5px 12px #00000035;
+        background: #ffffff25;
+        backdrop-filter: blur(6px);
     }
 
     .nav-wrapper.active,.nav-wrapper.active.scrolled{
         left: 0;
     }
 
+    .nav-wrapper a:hover{
+        color: var(--color-lightFont);
+    }
+
     .navitems{
         flex-direction: column;
         height: 50%;
         justify-content: space-evenly;
+        font-size: 2rem;
     }
 
+    #hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-wrapper{
+        justify-content: space-evenly;
+    }
+
+    .title{
+        font-size: 2.5vh;
+        margin: 0;
+    }
+
+    .description{
+        width: 100%;
+        margin: 0;
+    }
+
+    .summary{
+        font-size: 2vh;
+    }
+
+    
 
 
 }

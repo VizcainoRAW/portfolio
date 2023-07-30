@@ -6,7 +6,11 @@
 }
 
 html {
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
+    scroll-padding: 5vh;
+}
+a{
+    all: unset;
 }
 
 * {
@@ -59,7 +63,7 @@ hr {
     color: var(--color-StrongFont);
     cursor: pointer;
     font-weight: 300;
-    padding: 1rem 1.5rem;
+    padding: 0.5rem 1rem;
 }
 
 button:hover {

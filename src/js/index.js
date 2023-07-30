@@ -10,10 +10,21 @@ window.addEventListener('scroll', function() {
   });
 
   function toggleMenu() {
-    console.log("touched")
     var navWrapper = document.querySelector('.nav-wrapper');
     navWrapper.classList.toggle('active');
   }
+
+  document.getElementById("copyButton").addEventListener("click", function() {
+    var mail = "ivanandres1305@gmail.com";
+    navigator.clipboard.writeText(mail)
+    .then(() => {
+      console.log('Texto copiado al portapapeles');
+    })
+    .catch(err => {
+      console.error('Error al copiar al portapapeles:', err);
+    });
+    this.innerText = "¡Copy Mail!";
+  });
 
   document.addEventListener('DOMContentLoaded', function() {
     openJob(event, 'firtsJob');

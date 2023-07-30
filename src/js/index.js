@@ -23,7 +23,7 @@ window.addEventListener('scroll', function() {
     .catch(err => {
       console.error('Error al copiar al portapapeles:', err);
     });
-    this.innerText = "¡Copy Mail!";
+    this.innerText = "¡Mail Copied!";
   });
 
   document.addEventListener('DOMContentLoaded', function() {

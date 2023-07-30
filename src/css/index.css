@@ -94,7 +94,18 @@ button:hover {
 
 .nav-wrapper a{
     cursor: pointer;
+    display: inline-block;
 }
+    
+
+.logo-wrapper{
+    height: 4.5vh;
+    height: 4.5vh;
+    width: 4.5vh;
+    font-size: 20px;
+    color: var(--color-StrongFont);
+}
+
 
 .navitems{
     display: flex;
@@ -109,6 +120,8 @@ button:hover {
     width: 5vw;
     height: 5vw;
     color: var(--color-StrongFont);
+    top: 2vw;
+    right: 2vw;
 }
 
 #hero{
@@ -389,11 +402,14 @@ footer{
 
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+
+    html{
+        scroll-padding: calc(10vh*(-1));
+    }
+
     .hamburger{
         display: inline-block;
         position: fixed;
-        right: 2vw;
-        top: 2vw;
         z-index: 2;
     }
 

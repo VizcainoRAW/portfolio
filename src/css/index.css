@@ -349,6 +349,14 @@ button:hover {
     padding-top: 24px;
 }
 
+.job-description li {
+    color: var(--color-lightFont);
+    line-height: 1.7rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    position: relative;
+}
+
 .job-description li:before {
     color: var(--color-StrongFont);
     content: "▹ ";

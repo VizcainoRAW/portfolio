@@ -1,0 +1,28 @@
+# Django
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+env/
+
+# IDE (por ejemplo, Visual Studio Code)
+.vscode/
+
+# Logs y archivos temporales
+*.log
+*.swp
+*.swo
+*.bak
+*.pyc
+
+# Archivos de configuración local
+*.sqlite3
+*.env
+*.env.*
+db.sqlite3
+
+# Otros
+.DS_Store
+__MACOSX/

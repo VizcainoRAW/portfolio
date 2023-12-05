@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -6,8 +8,8 @@
         <meta name="description" content="A portfolio website to show all my projects and skills.">
         <meta name="viewport" content="width=device-width,initial-scale=1"/>
         <meta name="theme-color" content="#000000">
-        <link rel="stylesheet" href="./src/css/reset.css">
-        <link rel="stylesheet" href="./src/css/index.css">
+        <link rel="stylesheet" href="{% static 'core/css/reset.css' %}">
+        <link rel="stylesheet" href="{% static 'core/css/index.css' %}">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
         <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&amp;family=NTR&amp;display=swap" rel="stylesheet">
@@ -207,6 +209,6 @@
                 <div>All rights reserved. ©2023</div>
             </div>
         </footer>
-        <script src="./src/js/index.js"></script>
+        <script src="{% static 'core/js/index.js' %}"></script>
     </body>
 </html>

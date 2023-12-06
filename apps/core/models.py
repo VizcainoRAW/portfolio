@@ -4,7 +4,7 @@ from django.utils.translation import gettext_lazy as _
 
 class Technology(models.Model):
     name = models.CharField(max_length=20)
-    logo = models.ImageField(upload_to="")
+    logo = models.FileField(upload_to="core/logos/technologies/")
 
     class Meta:
         verbose_name = _("Technology")

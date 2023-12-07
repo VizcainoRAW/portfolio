@@ -1,5 +1,5 @@
 from django.shortcuts import render
 
 
-def index(request):
+def portfolio(request):
     return render(request, 'core/portfolio.html')

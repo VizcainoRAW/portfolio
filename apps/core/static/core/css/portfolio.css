@@ -334,9 +334,8 @@ button:hover {
     color: var(--color-lightFont);
 }
 
-.tab-indicator{
-    width: 3px;
-    position: relative;
+.tablink.active{
+    border: 1px solid var(--color-StrongFont);
 }
 
 .MuiTabs-indicator{

@@ -8,7 +8,7 @@
             <div class="tab">
                 <div class="tablinks">
                     {% for job in jobs %}
-                    <button class="tablink" onclick="openJob(event, {{ job.id }})">{{ job.company }}</button>
+                    <button class="tablink" onclick="openJob(event,{{ job.id }})">{{ job.company }}</button>
                     {% endfor %}
                 </div>
                 <div class="tab-indicator">

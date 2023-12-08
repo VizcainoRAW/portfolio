@@ -12,6 +12,7 @@ html {
 
 a{
     all: unset;
+    cursor: pointer;
 }
 
 * {
@@ -455,6 +456,7 @@ button:hover {
 .card-tech {
     color: var(--color-StrongFont);
     font-size: 1rem;
+    text-transform: uppercase;
 }
 
 footer{

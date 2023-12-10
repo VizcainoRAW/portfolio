@@ -22,8 +22,8 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', RedirectView.as_view(url='/portfolio/')),
-    path('portfolio', include('apps.core.urls')),
+    path('', RedirectView.as_view(url='portfolio/')),
+    path('portfolio/', include('apps.core.urls')),
 ]
 
 if settings.DEBUG:

@@ -4,7 +4,6 @@
     <div class="about-heading heading">
         <span class="heading-title">About Me</span> <hr>
     </div>
-
     <div class="about-content">
         <div class="about-text">
             <p>
@@ -15,17 +14,17 @@
                 Currently, I am <span class="light">open to new opportunities, so feel free to reach out. </span>
                 Here are some technologies I have been working with
             </p>
+            <div class="about-image"><img src="{% static "core/img/personal_photo.png" %}" alt="person" class="person"></div>
         </div>
-        <div class="about-image"><img src="{% static "core/img/personal_photo.png" %}" alt="person" class="person"></div>
         <div class="about-description">
             <ul class="skills-grid">
-                {% for skill in skills %}
+                {% for technology in technologies %}
                 <li class="skill-card">
-                    <h2 class="skill-tittle">{{ skill.name }}</h2>
-                    <img src="{{ skill.technology.logo.url }}" alt="{{ skill.technology.name }}" class="skill-image">
+                    <h2 class="skill-tittle">{{ technology.name }}</h2>
+                    <img src="{{ technology.logo.url }}" alt="{{ technology.name }}" class="skill-image">
                 </li>
                 {% endfor %}
-                </ul>
+            </ul>
         </div>
     </div>
 </section>

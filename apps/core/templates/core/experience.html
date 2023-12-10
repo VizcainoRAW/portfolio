@@ -4,29 +4,17 @@
         <span class="heading-title">Experience</span> <hr>
     </div>
     <div class="experience-content">
-        <div class="experience-tab">
-            <div class="tab">
-                <div class="tablinks">
-                    {% for job in jobs %}
-                    <button class="tablink" onclick="openJob(event,{{ job.id }})">{{ job.company }}</button>
-                    {% endfor %}
-                </div>
-                <div class="tab-indicator">
-                    <div class="MuiTabs-indicator"></div>
-                </div>
-            </div>
-            <div class="tab-content">
+            <ul class="job-list">
                 {% for job in jobs %}
-                <div id="{{job.id}}" class="job">
-                    <span class="joblist-job-title">{{job.title}} @ </span>
-                    <span class="joblist-job-company">{{job.company}}</span><div class="joblist-duration">{{job.start_date}} - {{job.end_date}}</div>
-                    <ul class="job-description">
-                        {{job.description|safe}}
-                    </ul>
+                <li id="{{job.id}}" class="job">
+                    <span class="job-title">{{job.title}} · </span><span class="job-company">{{job.company}}</span>
+                    <div class="job-duration">{{job.start_date|date:"b Y"}} - {{job.end_date|date:"b Y"}}</div>
+                    <p class="job-description">
+                        {{job.description}}
+                    </p>
                 </div>
                 {% endfor %}
-
-            </div>
+            </ul>
         </div>
     </div>
 </section>

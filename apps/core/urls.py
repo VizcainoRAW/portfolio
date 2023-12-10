@@ -4,5 +4,5 @@ from . import views
 app_name = 'juiceapp'
 
 urlpatterns = [
-    path('/', views.Portfolio.as_view(), name='portfolio'),
+    path('', views.Portfolio.as_view(), name='portfolio'),
 ]

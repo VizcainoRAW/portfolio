@@ -19,7 +19,7 @@ class Technology(models.Model):
 class Skill(models.Model):
     name = models.CharField(max_length=50)
     technology = models.OneToOneField(Technology, verbose_name=_("Technology"), on_delete=models.CASCADE)
-    description = models.CharField(max_length=150)
+    description = models.CharField(max_length=500)
     
     class Meta:
         verbose_name = _("Skill")
@@ -37,6 +37,7 @@ class Job(models.Model):
     start_date = models.DateField(auto_now=False, auto_now_add=False)
     end_date = models.DateField(auto_now=False, auto_now_add=False)
     description = models.CharField(max_length=500)
+    technologies = models.ManyToManyField(Technology, blank=True, default=None ,verbose_name=_("Technologies"))
 
     class Meta:
         verbose_name = _("Job")

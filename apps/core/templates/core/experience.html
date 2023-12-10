@@ -12,7 +12,14 @@
                     <p class="job-description">
                         {{job.description}}
                     </p>
-                </div>
+                    <ul class="job-technologies">
+                        {% for technology in job.technologies.all %}
+                        <li class="job-technology">
+                            {{ technology.name }}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </li>
                 {% endfor %}
             </ul>
         </div>

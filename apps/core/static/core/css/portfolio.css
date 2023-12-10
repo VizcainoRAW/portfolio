@@ -1,8 +1,26 @@
 :root {
     --color-background:  #0a192f;
-    --color-font: #8892b0;
-    --color-lightFont:  #ccd6f6;
-    --color-StrongFont: #64ffda;
+    --color-font: #94a3b8;
+    --color-lightFont:  #e2e8f0;
+    --color-StrongFont: #5eead4;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/static/core/fonts/Inter-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/static/core/fonts/Inter-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/static/core/fonts/Inter-Bold.ttf') format('truetype');
+    font-weight: 700;
 }
 
 html {
@@ -23,13 +41,17 @@ a{
 
 body {
     background: var(--color-background);
-    font-family: NTR,sans-serif;
+    font-family: 'Inter', sans-serif;
     color: var(--color-font);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 
 header{
     width: 100vw;
     height: 0;
+    font-weight: 700;
 }
 
 section{
@@ -65,7 +87,6 @@ hr {
     border-radius: 0.5rem;
     color: var(--color-StrongFont);
     cursor: pointer;
-    font-weight: 300;
     padding: 0.5rem 1rem;
     display: flex;
     justify-content: center;
@@ -148,8 +169,7 @@ button:hover {
     padding-bottom: 2rem;
 }
 
-.title{
-    font-size: 2rem;
+.tittle{
     width: 80%;
 }
 
@@ -161,15 +181,20 @@ button:hover {
   
 .Typist{
     color: var(--color-lightFont);
-    font-size: 3em;
-    font-weight: 400;
+    font-size: 4rem;
+    line-height: 4rem;
+    font-weight: 700;
 }
 
+.subtittle{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
 
 .Cursor--blinking {
     -webkit-font-smoothing: antialiased;
     line-height: 6rem;
-    font-weight: 400;
+    font-weight: 700;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -181,15 +206,8 @@ button:hover {
     
 }
 
-.summary {
-    font-size: 1.5rem;
-    font-weight: 400;
-    line-height: 2.5rem;
-}
-
-
 .light{
-    color: var(--color-StrongFont);
+    color: var(--color-lightFont);
 }
 
 .contact-me{
@@ -212,7 +230,8 @@ button:hover {
     justify-content: flex-start;
     color: var(--color-lightFont);
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 700;
+    line-height: 3rem;
     padding-left: 7%;
     
 }
@@ -225,18 +244,17 @@ button:hover {
     align-items: center;
     gap: 2rem;
     justify-content: space-evenly;
-    line-height: 1.5;
     padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .about-text {
     width: 100%;
-    height: 50%;
-    font-size: 1.5rem;
-    font-weight: 400;
+    height: 100%;
+    line-height: 1.75rem;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: start;
 }
 
 .about-text p{
@@ -250,23 +268,20 @@ button:hover {
 }
 
 .skills-grid{
-    width: 100%;
+    width: 80%;
     height: 100%;
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(8,1fr);
 }
 
 .skill-card{
     display: flex;
     flex-direction: column;
     background-color: #10213e;
-    border-radius: 2vw;
-    width: 12vw;
-    height: 12vw;
+    border-radius: 0.5rem;
     justify-content: center;
     align-items: center;
-    border: 10px var(--color-StrongFont);
     cursor: pointer;
 }
 
@@ -274,18 +289,17 @@ button:hover {
     max-width: 90%;
     text-align: center;
     color: var(--color-lightFont);
-    font-size: 2vw;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .skill-card img{
-    max-width: 80%;
-    max-height: 40%;
+    max-width: 50%;
+    max-height: 50%;
 }
 
 .about-image{
-    width: 36vh;
-    height: 48vh;
+    width: 30vh;
+    height: 40vh;
     border-radius: 0px;
     box-shadow:  21px 21px 6px #050b15;
 }
@@ -310,6 +324,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     width: 100%;
+    gap: 1rem;
     align-items: center;
 }
 
@@ -317,28 +332,49 @@ button:hover {
     display: none;
     width: 600px;
     height: 338px; 
+    font-weight: 500;
+    padding: 1rem;
+}
+
+.job:hover{
+    background-color: #ffffff05;
+    border-radius: 0.375rem;
+    box-shadow:  5px 5px 10px #0a192e,
+             -5px -5px 10px #0a1a30;
 }
 
 .job-title{
-    font-size: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
     color: var(--color-lightFont);
-    font-family: NTR, sans-serif;
+
 }
 
 .job-company{
-    font-family: NTR, sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
     color: var(--color-lightFont);
 }
 
-.job-duration{
-    font-size: 2rem;
+.job-description {
+    padding-top: 1.5rem;
 }
 
-.job-description {
-    font-family: NTR, sans-serif;
-    font-size: 1.5rem;
-    padding-top: 24px;
+.job-technologies{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.job-technology{
+    vertical-align: baseline;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border: 0 solid var(--color-StrongFont);
+    background-color: rgba(45,212,191,.1);
+    color: var(--color-StrongFont);
+    border-radius: 9999px;
 }
 
 .projects-content{
@@ -357,30 +393,34 @@ button:hover {
     height: 100%;
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2, 1fr); 
 }
 
 .projects-card {
-    background-color: #10213e;
+    font-weight: 500;
     border-radius: 16px;
     cursor: default;
     display: flex;
     flex-direction: column;
-    padding: 2rem 1.75rem;
+    padding: 1rem;
 }
 
 .card-header {
     border-bottom: none!important;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    margin-top: -20px;
-    padding: 1.25em 0!important;
+    padding: 0.5rem 0!important;
 }
 
 .folder-icon{
     color: var(--color-StrongFont);
+}
+
+.external-links{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
 }
 
 .MuiSvgIcon-root {
@@ -391,18 +431,36 @@ button:hover {
 
 .card-title {
     color: var(--color-lightFont);
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 1.5rem;
 }
 
 .card-des{
+    padding-top: 1.5rem;
     overflow: auto;
 }
 
-.card-tech {
+.card-technologies {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.card-tech{
+    vertical-align: baseline;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border: 0 solid var(--color-StrongFont);
+    background-color: rgba(45,212,191,.1);
     color: var(--color-StrongFont);
-    font-size: 1rem;
-    text-transform: uppercase;
+    border-radius: 9999px;
+}
+
+.projects-card:hover{
+    background-color: #ffffff05;
+    border-radius: 0.375rem;
+    box-shadow:  5px 5px 10px #0a192e,
+             -5px -5px 10px #0a1a30;
 }
 
 footer{

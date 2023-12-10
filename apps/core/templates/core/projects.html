@@ -19,18 +19,15 @@
                         
                     </span>
                 </div>
-
                 <div class="card-title">{{project.name}}</div>
                 <div class="card-desc">
-
                     <p>{{project.description}}</p>
                 </div>
-                <div class="card-tech">
+                <ul class="card-technologies">
                     {% for technology in project.technologies.all %}
-                        {{ technology.name }}
-                        {% if not forloop.last %}, {% endif %}
+                        <li class="card-tech">{{ technology.name }}</li>
                     {% endfor %}
-                </div>
+                </ul>
             </li>
             {% endfor %}
 </section>

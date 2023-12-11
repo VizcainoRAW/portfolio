@@ -2,4 +2,4 @@ from portfolio.settings.base import *
 
 DEBUG = False
 
-ALLOWED_HOSTS=['ivanvizcaino.netlify.com']
+ALLOWED_HOSTS=['vizcainoRAW.pythonenywhere.com']

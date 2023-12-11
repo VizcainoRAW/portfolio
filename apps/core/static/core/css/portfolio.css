@@ -161,12 +161,12 @@ button:hover {
 .hero-wrapper{
     display: flex;
     width: 90%;
-    height: 100%;
+    height: 50vh;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     padding-left: 5rem;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
 }
 
 .tittle{
@@ -266,11 +266,11 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    width: 100%;
 }
 
 .skills-grid{
-    width: 80%;
-    height: 100%;
+    width: 90%;
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(8,1fr);
@@ -291,6 +291,8 @@ button:hover {
     text-align: center;
     color: var(--color-lightFont);
     font-weight: 500;
+    font-size: 0.75em;
+    line-height: 1em;
 }
 
 .skill-card img{
@@ -331,8 +333,8 @@ button:hover {
 
 .job{
     display: none;
-    width: 600px;
-    height: 338px; 
+    width: 50vw;
+    height: auto; 
     font-weight: 500;
     padding: 1rem;
 }
@@ -359,10 +361,12 @@ button:hover {
 
 .job-description {
     padding-top: 1.5rem;
+    overflow-y: auto;
 }
 
 .job-technologies{
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     margin-top: 1rem;
 }
@@ -376,6 +380,7 @@ button:hover {
     background-color: rgba(45,212,191,.1);
     color: var(--color-StrongFont);
     border-radius: 9999px;
+    box-sizing: border-box;
 }
 
 .projects-content{
@@ -442,6 +447,7 @@ button:hover {
 
 .card-technologies {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     margin-top: 1rem;
 }
@@ -455,6 +461,7 @@ button:hover {
     background-color: rgba(45,212,191,.1);
     color: var(--color-StrongFont);
     border-radius: 9999px;
+    box-sizing: border-box;
 }
 
 .projects-card:hover{
@@ -490,6 +497,11 @@ footer{
 
     html{
         scroll-padding: calc(10vh*(-1));
+    }
+
+    body{
+        font-size: 0.9rem;
+        line-height: 1.3rem;
     }
 
     .hamburger{
@@ -546,9 +558,14 @@ footer{
         padding: 0;
     }
 
-    .title{
-        font-size: 1.25rem;
-        margin: 0;
+    .Typist{
+        font-size: 2.2rem;
+        line-height: 2.5rem;
+    }
+
+    .subtittle{
+        font-size: 1.1rem;
+        line-height: 1.6rem;
     }
 
     .description{
@@ -556,12 +573,9 @@ footer{
         margin: 0;
     }
 
-    .summary{
-        font-size: 1rem;
-    }
-
-    .heading{
-        font-size: 2rem;
+    .heading-title{
+        font-size: 1.5rem;
+        line-height: 1.75rem;
     }
 
     .about-content{
@@ -569,14 +583,17 @@ footer{
         align-items: center;
         justify-content: flex-start;
         padding-left: 1rem;
-        overflow: hidden;
     }
 
     .about-text{
+        flex-direction: column;
         width: 100%;
-        font-size: 1rem;
-        height: 60%;
-        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .about-text p{
+        width: 100%;
     }
 
     .about-image{
@@ -585,33 +602,24 @@ footer{
 
     }
 
+    .skills-grid{
+        grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+    }
+
     .experience-content{
         width: 90%;
         padding-left: 1rem;
     }
 
-    .experience-tab{
-        width: 100%;
-        height: 100%;
-        flex-direction: column;
+    .job{
+        width: 80vw;
     }
 
-    .tab{
-        width: 100%;
-    }
-
-    .tablink{
+    .job-title,.job-company{
         font-size: 1rem;
-    }
+        line-height: 1.25rem;
 
-    .tab-content{
-        width: 100%;
-        padding-top: 1.5rem;
-        font-size: 1rem;
-    }
-
-    .joblist-job-title{
-        margin: 0;
     }
 
     .projects-content{
@@ -653,24 +661,6 @@ footer{
         justify-content: space-evenly;
     }
 
-    .about-text{
-        width: 50%;
-        padding-left: 2rem;
-    }
-
-    .about-image{
-        width: 24vw;
-        height: 32vw;
-    }
-
-    .experience-content{
-        padding-left: 5rem;
-    }
-
-    .experience-tab{
-        width: 100%;
-    }
-    
     .projects-grid{
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(auto-fill,minmax(300px,1fr));

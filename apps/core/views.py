@@ -8,8 +8,8 @@ class Portfolio(View):
     def get(self, request, *args, **kwargs):
         context = {
             'technologies': Technology.objects.all(),
-            'jobs': Job.objects.all(),
-            'projects': Project.objects.all()
+            'jobs': Job.objects.all().reverse,
+            'projects': Project.objects.all(),
         }
 
         return render(request, self.template_name, context)

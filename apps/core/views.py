@@ -8,7 +8,7 @@ class Portfolio(View):
     def get(self, request, *args, **kwargs):
         context = {
             'technologies': Technology.objects.all(),
-            'jobs': Job.objects.all().reverse,
+            'jobs': Job.objects.all().order_by('-start_date'),
             'projects': Project.objects.all(),
         }
 
